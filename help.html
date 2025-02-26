@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Help Center</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #FFD700; /* Golden text */
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #000000;
+            color: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        h2 {
+            color: #FFD700;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .faq-item h3 {
+            color: #FFD700;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: #fff;
+        }
+
+        .faq-item a {
+            color: #00A2FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .faq-item a:hover {
+            color: #FFD700;
+        }
+
+        /* Contact Form */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #FFD700;
+            font-size: 16px;
+            color: #000;
+        }
+
+        #contact-form button {
+            width: 100%;
+            padding: 14px;
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #contact-form button:hover {
+            background-color: #e0b400;
+            transform: scale(1.05);
+        }
+
+        /* Live Chat */
+        #start-chat {
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease, transform 0.2s ease-in-out;
+            background-color: #FFD700;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #start-chat:hover {
+            background-color: #e0b400;
+            transform: scale(1.05);
+        }
+
+        #start-chat:active {
+            transform: scale(0.95);
+        }
+
+        #chat-box {
+            display: none;
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bank Help Center</h1>
+        <nav>
+            <ul>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#chat">Live Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How can I open a new account?</h3>
+            <p>Visit our <a href="INDEX.HTML">Account Opening Page</a>.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I reset my password?</h3>
+            <p>Click on "Forgot Password" on the login page.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I report fraud?</h3>
+            <p>Contact us through our <a href="#contact">contact form</a>.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Full Name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="chat">
+        <h2>Live Chat</h2>
+        <button id="start-chat">Start Chat</button>
+        <div id="chat-box">
+            <p>Welcome to live chat! How can I assist you?</p>
+            <textarea id="chat-input" placeholder="Type your message..."></textarea><br>
+            <button id="send-chat">Send</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bank Help Center. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("start-chat").addEventListener("click", function() {
+            document.getElementById("chat-box").style.display = "block";
+        });
+
+        // FAQ-based responses
+        const faqResponses = {
+            "open account": "To open a new account, visit our Account Opening Page.",
+            "reset password": "To reset your password, click on 'Forgot Password' on the login page.",
+            "report fraud": "To report fraud, please use our contact form to reach us directly."
+        };
+
+        document.getElementById("send-chat").addEventListener("click", function() {
+            var chatInput = document.getElementById("chat-input").value.toLowerCase().trim();
+            if (chatInput.trim()) {
+                // User's message
+                var userMessage = document.createElement("p");
+                userMessage.textContent = "You: " + chatInput;
+                document.getElementById("chat-box").appendChild(userMessage);
+                document.getElementById("chat-input").value = ''; // Clear input
+
+                // System's response based on FAQ
+                var systemMessage = document.createElement("p");
+                if (faqResponses[chatInput]) {
+                    systemMessage.textContent = "System: " + faqResponses[chatInput];
+                } else {
+                    systemMessage.textContent = "System: hello, how can i assist u ?";
+                }
+                document.getElementById("chat-box").appendChild(systemMessage);
+            } else {
+                alert("Please enter a message.");
+            }
+        });
+    </script>
+</body>
+</html>
